@@ -1,0 +1,107 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+.nav-links a {
+    color: #333;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #ff7f50;
+}
+
+.login-btn {
+    background-color: #ff7f50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+}
+
+.login-btn:hover {
+    background-color: #ff4500;
+}
+
+/* Main content */
+main {
+    padding: 2rem;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.image-tile {
+    flex-basis: calc(50% - 0.5rem);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.image-tile img {
+    width: 100%;
+    height: auto;
+}
+
+/* Add these styles to your existing styles.css file */
+
+/* About page styles */
+.about-intro {
+    padding: 2rem;
+    background-color: #ff7f50;
+    color: #fff;
+}
+
+.about-intro h1 {
+    margin-bottom: 1rem;
+}
+
+.about-process, .about-team {
+    padding: 2rem;
+}
+
+.about-process h2, .about-team h2 {
+    margin-bottom: 1rem;
+}
+
+.about-process h3, .about-process p {
+    margin-bottom: 0.5rem;
+}
