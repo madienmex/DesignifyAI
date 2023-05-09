@@ -1078,6 +1078,7 @@ button,
   /* Spotlight */
 
 	.spotlight {
+
     -moz-align-items: center;
     -webkit-align-items: center;
     -ms-align-items: center;
@@ -1090,6 +1091,7 @@ button,
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
+
 	}
 
 		.spotlight .image {
@@ -1099,12 +1101,12 @@ button,
 			order: 1;
 			border-radius: 0;
 			width: 20rem;
-      text-align: center;
 		}
 
 			.spotlight .image img {
 				border-radius: 0;
-				width: 100%;
+				width: 40%;
+        margin-left: 31vw; /* Center image inside .image */
 			}
 
 		.spotlight .content {
