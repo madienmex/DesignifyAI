@@ -50,17 +50,25 @@
 
 					// Delay.
 						delay: 6000
-
 				};
 			*/
 			
-			var settings = {images : [], delay: 6000};
+			var settings = {images : [], delay: 6000 };
+				/*
+			for (let i = 1; i <= 13; i++) { 
+				settings.images.push({url: `images/bg${i}.png`, alignment: `center`});
+			} 
+			
+			settings.images = Array.from({length: 13}, (_, i) => 
+  				({url: `images/bg${i+1}.png`, alignment: 'center'})
+			);
+			
+			*/
 
-			for (let i = 1; i <= 13; i++) { // change this to the number of images you have
-				settings.images.push({url: `images/bg${i}.png : `, alignment: 'center'});
+			for(let i = 1; i <= 13; i++) {
+    			settings.images[`images/bg${i}.png`] = 'center';
 			}
-			console.log(settings.images[1]);
-
+			
 			// Vars.
 				var	pos = 0, lastPos = 0,
 					$wrapper, $bgs = [], $bg,
@@ -71,12 +79,12 @@
 					$wrapper.id = 'bg';
 					$body.appendChild($wrapper);
 
-				for (k in Settings.images) {
+				for (k in settings.images) {
 
 					// Create BG.
 						$bg = document.createElement('div');
 							$bg.style.backgroundImage = 'url("' + k + '")';
-							$bg.style.backgroundPosition = Settings.images[k];
+							$bg.style.backgroundPosition = settings.images[k];
 							$wrapper.appendChild($bg);
 
 					// Add it to array.
