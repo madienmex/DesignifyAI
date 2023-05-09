@@ -804,7 +804,9 @@ button,
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
-  position: relative; }
+  position: relative; 
+  justify-content: center;}
+
   #signup-form input[type="text"],
   #signup-form input[type="password"],
   #signup-form input[type="email"] {
@@ -818,7 +820,8 @@ button,
       -moz-flex-direction: column;
       -webkit-flex-direction: column;
       -ms-flex-direction: column;
-      flex-direction: column; }
+      flex-direction: column; 
+    }
       #signup-form input[type="type"],
       #signup-form input[type="password"],
       #signup-form input[type="email"] {
@@ -1079,18 +1082,9 @@ button,
 
 	.spotlight {
 
-    -moz-align-items: center;
-    -webkit-align-items: center;
-    -ms-align-items: center;
     align-items: center;
     justify-content: center;
-    -moz-justify-content: center;
-    -webkit-justify-content: center;
-    -ms-justify-content: center;
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
+    display: flex;
 
 	}
 
@@ -1101,23 +1095,32 @@ button,
 			order: 1;
 			border-radius: 0;
 			width: 20rem;
+      display: flex; /* Make this a flex container */
+      align-items: center; /* Center child elements vertically */
+      justify-content: center; /* Center child elements horizontally */
 		}
 
 			.spotlight .image img {
 				border-radius: 0;
 				width: 40%;
-        margin-left: 31vw; /* Center image inside .image */
+        padding: 1.5em 0em 1.5em 0em ;
 			}
 
-		.spotlight .content {
-			padding: 2em 4em 0.1em 4em ;
-			-moz-order: 2;
-			-webkit-order: 2;
-			-ms-order: 2;
-			order: 2;
-			max-width: 48em;
-			width: 60%;
-		}
+      .spotlight .content {
+        -moz-order:2;
+        -webkit-order: 2;
+        -ms-order: 2;
+        order: 2;
+        /*
+        padding: 4em 4em 0em 0em ;
+        -moz-order: 2;
+        -webkit-order: 2;
+        -ms-order: 2;
+        order: 2;
+        max-width: 48em;
+        width: 60%;
+        */
+      }
 
 		.spotlight:nth-child(2n) {
 			-moz-flex-direction: row-reverse;

@@ -37,8 +37,9 @@
 		(function() {
 
 			// Settings.
+			/*
 				var settings = {
-
+					
 					// Images (in the format of 'url': 'alignment').
 						images: {
 							'images/characterdesign.png': 'center',
@@ -51,6 +52,14 @@
 						delay: 6000
 
 				};
+			*/
+			
+			var settings = {images : [], delay: 6000};
+
+			for (let i = 1; i <= 13; i++) { // change this to the number of images you have
+				settings.images.push({url: `images/bg${i}.png : `, alignment: 'center'});
+			}
+			console.log(settings.images[1]);
 
 			// Vars.
 				var	pos = 0, lastPos = 0,
@@ -62,12 +71,12 @@
 					$wrapper.id = 'bg';
 					$body.appendChild($wrapper);
 
-				for (k in settings.images) {
+				for (k in Settings.images) {
 
 					// Create BG.
 						$bg = document.createElement('div');
 							$bg.style.backgroundImage = 'url("' + k + '")';
-							$bg.style.backgroundPosition = settings.images[k];
+							$bg.style.backgroundPosition = Settings.images[k];
 							$wrapper.appendChild($bg);
 
 					// Add it to array.

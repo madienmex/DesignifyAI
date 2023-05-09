@@ -1,3 +1,21 @@
+DesignifyAI Coming Soon page
+
+
+Hype build-up ; Sign up page;
+
+User metrics ; Database testing
+
+
+
+
+
+
+
+
+
+
+
+
 Eventually by HTML5 UP
 html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
